@@ -1,0 +1,88 @@
+{
+  "properties": [
+    {
+      "id": "apartamento-centro-001",
+      "name": "Apartamento Centro",
+      "description": "Hermoso apartamento en el centro de la ciudad",
+      "area": "85 m²",
+      "rooms": 2,
+      "bathrooms": 1,
+      "location": "Centro de la ciudad",
+      "price": "$850,000",
+      "rooms": [
+        {
+          "id": "sala",
+          "name": "Sala Principal",
+          "panorama": "images/panoramas/sala.jpg",
+          "thumbnail": "images/thumbnails/sala-thumb.jpg",
+          "hotspots": [
+            {
+              "position": { "x": 0.2, "y": 0.1 },
+              "target": "cocina",
+              "label": "Ir a la Cocina"
+            },
+            {
+              "position": { "x": -0.3, "y": 0.0 },
+              "target": "dormitorio1",
+              "label": "Ir al Dormitorio"
+            }
+          ]
+        },
+        {
+          "id": "cocina",
+          "name": "Cocina",
+          "panorama": "images/panoramas/cocina.jpg",
+          "thumbnail": "images/thumbnails/cocina-thumb.jpg",
+          "hotspots": [
+            {
+              "position": { "x": 0.1, "y": -0.1 },
+              "target": "sala",
+              "label": "Volver a la Sala"
+            },
+            {
+              "position": { "x": -0.2, "y": 0.05 },
+              "target": "bano",
+              "label": "Ir al Baño"
+            }
+          ]
+        },
+        {
+          "id": "dormitorio1",
+          "name": "Dormitorio Principal",
+          "panorama": "images/panoramas/dormitorio1.jpg",
+          "thumbnail": "images/thumbnails/dormitorio1-thumb.jpg",
+          "hotspots": [
+            {
+              "position": { "x": 0.0, "y": -0.2 },
+              "target": "sala",
+              "label": "Volver a la Sala"
+            },
+            {
+              "position": { "x": 0.3, "y": 0.1 },
+              "target": "bano",
+              "label": "Ir al Baño"
+            }
+          ]
+        },
+        {
+          "id": "bano",
+          "name": "Baño",
+          "panorama": "images/panoramas/bano.jpg",
+          "thumbnail": "images/thumbnails/bano-thumb.jpg",
+          "hotspots": [
+            {
+              "position": { "x": -0.1, "y": 0.0 },
+              "target": "cocina",
+              "label": "Ir a la Cocina"
+            },
+            {
+              "position": { "x": 0.2, "y": -0.1 },
+              "target": "dormitorio1",
+              "label": "Ir al Dormitorio"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
